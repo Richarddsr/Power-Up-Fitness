@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Up Fitness</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f6f7;
+            color: var(--primary-color);
+        }
+        .fitness-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .card-workout {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .card-workout:hover {
+            transform: scale(1.05);
+        }
+        .btn-power-up {
+            background-color: var(--secondary-color);
+            border: none;
+            transition: all 0.3s ease;
+        }
+        .btn-power-up:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-5px);
+        }
+        .dragon-ball-reference {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+        .progress-custom {
+            height: 25px;
+            background-color: #e9ecef;
+            border-radius: 15px;
+        }
+        .progress-bar-custom {
+            background-color: var(--secondary-color);
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container fitness-container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h1 class="display-4">Power Up <span class="dragon-ball-reference">Z</span> Fitness</h1>
+                <p class="lead">Treine como um <span class="dragon-ball-reference">Saiyajin</span>, conquiste seus limites!</p>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card card-workout p-4 text-center">
+                    <i class="fas fa-dumbbell fa-3x mb-3 text-primary"></i>
+                    <h3>Treino de Força</h3>
+                    <p>Aumente seu <span class="dragon-ball-reference">Poder de Luta</span></p>
+                    <button class="btn btn-power-up btn-lg w-100 mt-3">
+                        Iniciar Treino <i class="fas fa-bolt"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-workout p-4 text-center">
+                    <i class="fas fa-running fa-3x mb-3 text-primary"></i>
+                    <h3>Cardio Intenso</h3>
+                    <p>Transforme-se como um <span class="dragon-ball-reference">Super Saiyajin</span></p>
+                    <button class="btn btn-power-up btn-lg w-100 mt-3">
+                        Começar Corrida <i class="fas fa-running"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-workout p-4 text-center">
+                    <i class="fas fa-heartbeat fa-3x mb-3 text-primary"></i>
+                    <h3>Condicionamento</h3>
+                    <p>Ultrapasse seus <span class="dragon-ball-reference">Limites</span></p>
+                    <button class="btn btn-power-up btn-lg w-100 mt-3">
+                        Evoluir <i class="fas fa-chart-line"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card p-4">
+                    <h3>Seu Progresso</h3>
+                    <div class="progress progress-custom mt-3">
+                        <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            75% - Nível Saiyajin
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light py-3 mt-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Power Up Z Fitness | Inspirado pelos <span class="dragon-ball-reference">Guerreiros Z</span></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
