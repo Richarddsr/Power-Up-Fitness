@@ -1,0 +1,39 @@
+*.pyc
+__pycache__/
+db.sqlite3
+/media/
+*.log
+.env
+/static/
+# Existing .gitignore contents
+*.pyc
+__pycache__/
+db.sqlite3
+
+# Vercel
+.vercel
+staticfiles_build/# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Static files
+staticfiles_build/
+/static/
+
+# Vercel
+.vercel
+
+# Environment
+.env
